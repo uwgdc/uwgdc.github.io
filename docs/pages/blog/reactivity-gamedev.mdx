@@ -1,0 +1,79 @@
+---
+layout: minimal
+title: Reactivity in Game Development
+description: The case for reactive logic in game development.
+date: 2026-01-31
+authors:
+- "[Ava Lynch](https://avafe.me)"
+categories:
+- gamedev
+- reactivity
+---
+
+# Reactivity in Game Development
+
+>This article’s code is written in the [Luau](https://luau.org) language, demonstrating concepts with the [Fusion](https://elttob.uk/Fusion/) reactivity library. It does not, however, assume prior knowledge.
+>
+>If you can read basic code, you can read this article. Just ignore undefined syntax.
+
+## State Reconciliation
+
+Imagine you're developing a puzzle game for drooling toddlers, and the level you're working on revolves around a combo-locked door. Five levers, with two states: `true` and `false`. To unlock the door, the toddler must randomly flip these levers to match the required configuration (`RequiredLevers = [true, true, false, true, false]`). When they succeed, all levers glow green, and the door opens.
+
+So, you have 6 independent stores of game state across the levers and door. Each lever needs to switch its own boolean state, know the state of other levers, and compute the win condition.
+
+This is a nightmare.
+
+## The *State* of Reactivity *(ahaha)*
+
+Many developers have wrangled state reconciliation in this same way. Especially game developers, because the necessary tools often aren't available to address it. Meanwhile, the web world came up with its solution over a decade ago. It's called **reactivity**.
+
+The first widely adopted reactivity library is React, released for the web in 2013. Since then, numerous other libraries have sprung up across the web and beyond. One library, Fusion, targets Roblox, and is rapidly growing in popularity.
+
+## Reactive Computation
+
+To demonstrate reactivity as a concept, we're going to introduce two types: `Value`s and `Computed`s. Values store manually-set values, while `Computed`s automatically react to `Value`s. *(or other `Computed`s!)*
+
+Let's say `ValueA = Scope:Value(3)` and `ValueB = Scope:Value(6)`. Now let's define our `Computed`:
+
+```lua
+ComputedA = Scope:Computed(function(Use)
+	return Use(ValueA) * Use(ValueB)
+end)
+```
+
+It'll first be equal to 18, but if we do `ValueA:set(2)`, it will recompute and become 12 automatically.
+
+This may be over-engineered for basic multiplication, but what about our lever door example? And large, interdependent nested data structures? It's a godsend.
+
+This is the core of reactivity: **you write the instructions, and it computes for you**.
+
+## Reactive Rendering
+
+Okay, reactive logic is nice and all, but it's not *real*. How do I get it onto the screen?
+
+Let's expand our lever example. Instead of manually placing these levers, we can actually have our defined `RequiredLevers` *place them for us*. For this, we're going to use a new type: `ForPairs`.
+
+Instead of looping over our array of levers, `ForPairs` will do it for us, and let us pass in a callback function to render our levers:
+
+```lua
+Scope:ForPairs(RequiredLevers, function(_, Index: number, Value: boolean)
+	return Lever { -- Lever constructor function
+		RequiredState = Value, -- Lever's validity condition
+		GameWon = GameWon, -- Passed in from ABOVE! Centralized state!
+		Position = Vector3.new(Index * 5, 0, 0), -- 3D positioning
+	}
+end)
+```
+
+Now imagine more complex scenarios, like board games with grids of interactive tiles. Reactive rendering can become a real time-saver, especially if you need to adapt the game around config properties.
+
+## Takeaways
+
+Whether your game is primarily UI, or you’re constructing data-driven 3D scenes, reactivity is a powerful concept worth investing in. [Fusion](https://elttob.uk/Fusion/) provides this today on Roblox, and I’d like to see reactive libraries spring up for other game engines.
+
+## Further Reading
+
+- [Thinking in Fusion](https://youtu.be/WWecENWZpy4?list=PLsFMLV-H_GYtiaqOP52dQyWFaoVM8UmLU) — Video introduction to Fusion
+- [Wolf Scripting Language](https://wolf.phfox.net) — Reactive scripting language, theorized by Daniel Fox, the creator of Fusion
+- [React](https://react.dev) — React documentation
