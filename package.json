@@ -12,6 +12,7 @@
 		"docs:preview": "vocs preview"
 	},
 	"dependencies": {
+		"@tailwindcss/vite": "^4.2.1",
 		"react": "latest",
 		"react-dom": "latest",
 		"tailwindcss": "^4.2.1",
