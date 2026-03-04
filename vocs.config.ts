@@ -3,6 +3,8 @@ import { defineConfig } from "vocs";
 export default defineConfig({
 	title: "UW Gamedev",
 	description: "Game development resources from the University of Waterloo.",
+	baseUrl: "https://uwgdc.github.io",
+	basePath: "/docs",
 	aiCta: false,
 	topNav: [
 		{ text: "Wiki", link: "/intro" },
