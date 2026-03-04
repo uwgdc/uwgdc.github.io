@@ -4,6 +4,11 @@ export default defineConfig({
 	title: "UW Gamedev",
 	description: "Game development resources from the University of Waterloo.",
 	aiCta: false,
+	topNav: [
+		{ text: "Wiki", link: "/intro" },
+		{ text: "Talks", link: "/blog" },
+		{ text: "Discord", link: "https://discord.gg/tHEXh9d" },
+	],
 	sidebar: [
 		{
 			text: "PRESS START",
@@ -11,6 +16,10 @@ export default defineConfig({
 				{
 					text: "Welcome!",
 					link: "/intro",
+				},
+				{
+					text: "Teams",
+					link: "/teams",
 				},
 				{
 					text: "Choosing an Engine",
