@@ -1,7 +1,13 @@
+import { Button } from "./components/Button";
+
 export default function Main() {
 	return (
-		<h1 className="text-3xl font-semibold font-mono">
-			vite + react + tailwind :D
-		</h1>
+		<div className="flex flex-col">
+			some testing text here
+			<div className="flex flex-col gap-2">
+				<Button>Join Us</Button>
+				<Button variant="outlined">Join Us</Button>
+			</div>
+		</div>
 	);
 }

@@ -12,7 +12,9 @@
 		"docs:preview": "vocs preview"
 	},
 	"dependencies": {
+		"@headlessui/react": "^2.2.9",
 		"@tailwindcss/vite": "^4.2.1",
+		"class-variance-authority": "^0.7.1",
 		"react": "latest",
 		"react-dom": "latest",
 		"tailwindcss": "^4.2.1",
