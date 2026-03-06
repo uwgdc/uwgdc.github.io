@@ -4,17 +4,17 @@ title: Reactivity in Game Development
 description: The case for reactive logic in game development.
 date: 2026-01-31
 authors:
-- "[Ava Lynch](https://avafe.me)"
+  - "[Ava Lynch](https://avafe.me)"
 categories:
-- gamedev
-- reactivity
+  - gamedev
+  - reactivity
 ---
 
 # Reactivity in Game Development
 
->This article’s code is written in the [Luau](https://luau.org) language, demonstrating concepts with the [Fusion](https://elttob.uk/Fusion/) reactivity library. It does not, however, assume prior knowledge.
+> This article’s code is written in the [Luau](https://luau.org) language, demonstrating concepts with the [Fusion](https://elttob.uk/Fusion/) reactivity library. It does not, however, assume prior knowledge.
 >
->If you can read basic code, you can read this article. Just ignore undefined syntax.
+> If you can read basic code, you can read this article. Just ignore undefined syntax.
 
 ## State Reconciliation
 
@@ -24,7 +24,7 @@ So, you have 6 independent stores of game state across the levers and door. Each
 
 This is a nightmare.
 
-## The *State* of Reactivity *(ahaha)*
+## The _State_ of Reactivity _(ahaha)_
 
 Many developers have wrangled state reconciliation in this same way. Especially game developers, because the necessary tools often aren't available to address it. Meanwhile, the web world came up with its solution over a decade ago. It's called **reactivity**.
 
@@ -32,7 +32,7 @@ The first widely adopted reactivity library is React, released for the web in 20
 
 ## Reactive Computation
 
-To demonstrate reactivity as a concept, we're going to introduce two types: `Value`s and `Computed`s. Values store manually-set values, while `Computed`s automatically react to `Value`s. *(or other `Computed`s!)*
+To demonstrate reactivity as a concept, we're going to introduce two types: `Value`s and `Computed`s. Values store manually-set values, while `Computed`s automatically react to `Value`s. _(or other `Computed`s!)_
 
 Let's say `ValueA = Scope:Value(3)` and `ValueB = Scope:Value(6)`. Now let's define our `Computed`:
 
@@ -50,9 +50,9 @@ This is the core of reactivity: **you write the instructions, and it computes fo
 
 ## Reactive Rendering
 
-Okay, reactive logic is nice and all, but it's not *real*. How do I get it onto the screen?
+Okay, reactive logic is nice and all, but it's not _real_. How do I get it onto the screen?
 
-Let's expand our lever example. Instead of manually placing these levers, we can actually have our defined `RequiredLevers` *place them for us*. For this, we're going to use a new type: `ForPairs`.
+Let's expand our lever example. Instead of manually placing these levers, we can actually have our defined `RequiredLevers` _place them for us_. For this, we're going to use a new type: `ForPairs`.
 
 Instead of looping over our array of levers, `ForPairs` will do it for us, and let us pass in a callback function to render our levers:
 

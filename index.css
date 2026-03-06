@@ -2,35 +2,35 @@
 @import "tailwindcss";
 
 @theme {
-	--color-primary: #f7b543;
-	--color-primary-50: oklch(91.842% 0.06819 80.512);
-	--color-primary-100: oklch(90.739% 0.07845 81.658);
-	--color-primary-200: oklch(88.265% 0.09863 80.895);
-	--color-primary-300: oklch(85.883% 0.11645 79.712);
-	--color-primary-400: oklch(83.761% 0.13341 79.198);
-	--color-primary-500: oklch(81.547% 0.14654 77.257);
-	--color-primary-600: oklch(78.339% 0.16071 73.558);
-	--color-primary-700: oklch(71.883% 0.15313 71.034);
-	--color-primary-800: oklch(62.29% 0.1322 71.006);
-	--color-primary-900: oklch(52.507% 0.11046 71.933);
-	--color-primary-950: oklch(47.276% 0.09893 72.434);
+  --color-primary: #f7b543;
+  --color-primary-50: oklch(91.842% 0.06819 80.512);
+  --color-primary-100: oklch(90.739% 0.07845 81.658);
+  --color-primary-200: oklch(88.265% 0.09863 80.895);
+  --color-primary-300: oklch(85.883% 0.11645 79.712);
+  --color-primary-400: oklch(83.761% 0.13341 79.198);
+  --color-primary-500: oklch(81.547% 0.14654 77.257);
+  --color-primary-600: oklch(78.339% 0.16071 73.558);
+  --color-primary-700: oklch(71.883% 0.15313 71.034);
+  --color-primary-800: oklch(62.29% 0.1322 71.006);
+  --color-primary-900: oklch(52.507% 0.11046 71.933);
+  --color-primary-950: oklch(47.276% 0.09893 72.434);
 
-	--color-secondary: oklch(91.279% 0 none);
-	--color-secondary-50: oklch(100% 0 none);
-	--color-secondary-100: oklch(100% 0 none);
-	--color-secondary-200: oklch(100% 0 none);
-	--color-secondary-300: oklch(98.809% 0 none);
-	--color-secondary-400: oklch(95.213% 0 none);
-	--color-secondary-500: oklch(91.279% 0 none);
-	--color-secondary-600: oklch(85.761% 0 none);
-	--color-secondary-700: oklch(80.152% 0 none);
-	--color-secondary-800: oklch(74.443% 0 none);
-	--color-secondary-900: oklch(68.949% 0 none);
-	--color-secondary-950: oklch(65.996% 0 none);
+  --color-secondary: oklch(91.279% 0 none);
+  --color-secondary-50: oklch(100% 0 none);
+  --color-secondary-100: oklch(100% 0 none);
+  --color-secondary-200: oklch(100% 0 none);
+  --color-secondary-300: oklch(98.809% 0 none);
+  --color-secondary-400: oklch(95.213% 0 none);
+  --color-secondary-500: oklch(91.279% 0 none);
+  --color-secondary-600: oklch(85.761% 0 none);
+  --color-secondary-700: oklch(80.152% 0 none);
+  --color-secondary-800: oklch(74.443% 0 none);
+  --color-secondary-900: oklch(68.949% 0 none);
+  --color-secondary-950: oklch(65.996% 0 none);
 
-	--color-emphasis: white/30;
+  --color-emphasis: white/30;
 
-	--font-sans:
-		"Alexandria", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Alexandria", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

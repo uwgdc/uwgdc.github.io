@@ -1,29 +1,30 @@
 {
-	"name": "uw-gamedev-site",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview",
-		"docs:dev": "vocs dev",
-		"docs:build": "vocs build",
-		"docs:preview": "vocs preview"
-	},
-	"dependencies": {
-		"@headlessui/react": "^2.2.9",
-		"@tailwindcss/vite": "^4.2.1",
-		"class-variance-authority": "^0.7.1",
-		"react": "latest",
-		"react-dom": "latest",
-		"tailwindcss": "^4.2.1",
-		"vocs": "latest"
-	},
-	"devDependencies": {
-		"@types/react": "latest",
-		"@types/react-dom": "latest",
-		"typescript": "latest",
-		"vite": "^7.3.1"
-	}
+  "name": "uw-gamedev-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs:dev": "vocs dev",
+    "docs:build": "vocs build",
+    "docs:preview": "vocs preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@tailwindcss/vite": "^4.2.1",
+    "class-variance-authority": "^0.7.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "^4.2.1",
+    "vocs": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "prettier": "3.8.1",
+    "typescript": "latest",
+    "vite": "^7.3.1"
+  }
 }
