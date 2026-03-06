@@ -6,8 +6,8 @@ export default function Main() {
       some testing text here
       <div className="flex flex-col gap-2">
         <Button>Join Us</Button>
+        <Button variant="primary">Join Us</Button>
         <Button variant="outlined">Join Us</Button>
-        <Button variant="secondary">Join Us</Button>
       </div>
     </div>
   );

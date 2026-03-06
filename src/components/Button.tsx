@@ -9,7 +9,7 @@ const button = cva(
   {
     variants: {
       variant: {
-        default:
+        primary:
           "bg-primary hover:bg-primary-600 active:bg-primary-700 text-white border-white/50 bg-linear-to-t from-black/10 to-white/0",
         outlined:
           "border-dashed border-primary text-primary hover:text-primary-600 active:text-primary-700 hover:border-primary-600 active:border-primary-700",
@@ -18,7 +18,7 @@ const button = cva(
       },
     },
     defaultVariants: {
-      variant: "default",
+      variant: "secondary",
     },
   },
 );
