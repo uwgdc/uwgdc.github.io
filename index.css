@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=LINE+Seed+JP&display=swap");
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+html {
+  font-size: 18px;
+}
 
 @theme {
   --color-primary: #f7b543;
