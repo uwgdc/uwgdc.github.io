@@ -2,6 +2,7 @@ import IntroSection from "./components/sections/IntroSection";
 import Topbar from "./components/Topbar";
 
 import GridPattern from "./assets/GridPattern.svg";
+import GameJamsSection from "./components/sections/GameJamsSection";
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
         }}
       >
         <IntroSection />
+        <GameJamsSection />
       </div>
     </div>
   );
