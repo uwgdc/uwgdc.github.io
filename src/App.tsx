@@ -3,6 +3,7 @@ import Topbar from "./components/Topbar";
 
 import GridPattern from "./assets/GridPattern.svg";
 import GameJamsSection from "./components/sections/GameJamsSection";
+import GamesSection from "./components/sections/GamesSection";
 
 export default function Main() {
   return (
@@ -17,6 +18,7 @@ export default function Main() {
       >
         <IntroSection />
         <GameJamsSection />
+        <GamesSection />
       </div>
     </div>
   );
