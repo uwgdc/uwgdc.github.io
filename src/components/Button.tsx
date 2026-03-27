@@ -4,7 +4,7 @@ import React from "react";
 
 const button = cva(
   [
-    "inline-flex w-fit justify-center px-4 py-2 border-2 font-bold shadow-sm transition-all  duration-150 uppercase",
+    "inline-flex justify-center border-2 font-bold shadow-sm transition-all  duration-150 uppercase",
   ],
   {
     variants: {
@@ -16,9 +16,14 @@ const button = cva(
         secondary:
           "bg-secondary text-black border-white/50 bg-linear-to-t from-black/5 to-white/0 hover:bg-secondary-600 active:bg-secondary-700",
       },
+      size: {
+        md: "px-4 py-2",
+        icon: "p-2",
+      },
     },
     defaultVariants: {
       variant: "secondary",
+      size: "md",
     },
   },
 );
@@ -28,11 +33,12 @@ export interface ButtonProps
     Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
     VariantProps<typeof button> {}
 
-export const Button: React.FC<ButtonProps> = ({ variant, ...props }) => {
+export const Button: React.FC<ButtonProps> = ({ variant, size, ...props }) => {
   return (
     <HeadlessButton
-      className={button({ variant })}
+      className={button({ variant, size })}
       data-variant={variant}
+      data-size={size}
       {...props}
     ></HeadlessButton>
   );
