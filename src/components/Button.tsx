@@ -33,10 +33,15 @@ export interface ButtonProps
     Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
     VariantProps<typeof button> {}
 
-export const Button: React.FC<ButtonProps> = ({ variant, size, ...props }) => {
+export const Button: React.FC<ButtonProps> = ({
+  className,
+  variant,
+  size,
+  ...props
+}) => {
   return (
     <HeadlessButton
-      className={button({ variant, size })}
+      className={button({ variant, size, className })}
       data-variant={variant}
       data-size={size}
       {...props}
