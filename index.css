@@ -2,6 +2,14 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: Nippo;
+  font-style: normal;
+  font-weight: 200 500 700;
+  font-display: swap;
+  src: url("/src/assets/fonts/Nippo.ttf");
+}
+
 html {
   font-size: 18px;
 }
@@ -37,5 +45,8 @@ html {
 
   --font-sans:
     "Alexandria", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display:
+    "Nippo", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

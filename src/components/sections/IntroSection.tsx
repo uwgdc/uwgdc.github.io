@@ -9,7 +9,7 @@ export default function IntroSection() {
       <Controller className="translate-y-24 absolute opacity-0 left-0 md:opacity-100 md:left-8 lg:left-32 xl:left-64 transition-all duration-300" />
       <div className="flex flex-col gap-8 items-center justify-center">
         <article className="flex flex-col gap-4">
-          <h1 className="text-center mb-0 text-3xl [&]:font-semibold">
+          <h1 className="text-center mb-0 text-3xl md:text-4xl [&]:font-medium">
             Waterloo&apos;s Home
             <br /> for Game Development
           </h1>
