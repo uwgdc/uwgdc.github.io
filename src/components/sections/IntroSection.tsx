@@ -4,7 +4,7 @@ import Controller from "../../assets/Controller.svg?react";
 
 export default function IntroSection() {
   return (
-    <div className="py-32 flex flex-col">
+    <div className="py-28 flex flex-col">
       <Gizmo className="-translate-y-10 absolute opacity-0 right-0 md:opacity-100 md:right-8 lg:right-32 xl:right-64 transition-all duration-300" />
       <Controller className="translate-y-24 absolute opacity-0 left-0 md:opacity-100 md:left-8 lg:left-32 xl:left-64 transition-all duration-300" />
       <div className="flex flex-col gap-8 items-center justify-center">
