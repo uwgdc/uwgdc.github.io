@@ -26,7 +26,7 @@ export default function GameJamsSection() {
             <Button variant="outlined">Notify me</Button>
           </span>
         </div>
-        <img src={Photos} className="w-108"></img>
+        <img src={Photos} className="h-70"></img>
       </div>
     </div>
   );

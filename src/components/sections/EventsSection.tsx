@@ -26,7 +26,7 @@ export default function EventsSectiion() {
             <Button variant="outlined">Notify me</Button>
           </span>
         </div>
-        <img src={Tickets} className="w-108"></img>
+        <img src={Tickets} className="h-70"></img>
       </div>
     </div>
   );

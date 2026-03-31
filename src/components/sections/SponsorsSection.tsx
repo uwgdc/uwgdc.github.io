@@ -26,7 +26,7 @@ export default function SponsorsSectiion() {
             </a>
           </span>
         </div>
-        <img src={Sponsors} className="h-108"></img>
+        <img src={Sponsors} className="h-70"></img>
       </div>
     </div>
   );

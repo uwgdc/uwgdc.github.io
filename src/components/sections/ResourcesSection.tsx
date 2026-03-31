@@ -26,7 +26,7 @@ export default function ResourcesSectiion() {
             <Button variant="outlined">Blog</Button>
           </span>
         </div>
-        <img src={Resources} className="w-108"></img>
+        <img src={Resources} className="h-70"></img>
       </div>
     </div>
   );
