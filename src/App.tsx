@@ -5,6 +5,7 @@ import GridPattern from "./assets/GridPattern.svg";
 import GameJamsSection from "./components/sections/GameJamsSection";
 import GamesSection from "./components/sections/GamesSection";
 import EventsSectiion from "./components/sections/EventsSection";
+import ResourcesSectiion from "./components/sections/ResourcesSection";
 
 export default function Main() {
   return (
@@ -21,6 +22,7 @@ export default function Main() {
         <GameJamsSection />
         <GamesSection />
         <EventsSectiion />
+        <ResourcesSectiion />
       </div>
     </div>
   );
