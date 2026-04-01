@@ -9,12 +9,12 @@ export default function SponsorsSectiion() {
         <div className="flex flex-col gap-8 w-fit">
           <div className="flex flex-col gap-4 w-96">
             <h1 className="mb-0 text-2xl [&]:font-medium gap-2.5">
-              Shoutout to our sponsors
+              Made possible with support
               <Heart width="32" height="32" className="inline align-top mx-2" />
             </h1>
             <p className="text-neutral-500 font-medium mt-0 w-full">
-              We're grateful to our sponsors for allowing us to continue
-              running. If you're a represenative, reach out!
+              We're grateful to our supporters and volunteers for allowing us to
+              continue running. If you're a represenative, reach out!
             </p>
           </div>
           <span className="flex gap-3 bg-white w-fit">
