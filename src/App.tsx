@@ -4,7 +4,7 @@ import Topbar from "./components/Topbar";
 import GridPattern from "./assets/GridPattern.svg";
 import GameJamsSection from "./components/sections/GameJamsSection";
 import GamesSection from "./components/sections/GamesSection";
-import EventsSectiion from "./components/sections/EventsSection";
+import EventsSection from "./components/sections/EventsSection";
 import ResourcesSectiion from "./components/sections/ResourcesSection";
 import SponsorsSectiion from "./components/sections/SponsorsSection";
 
@@ -22,7 +22,7 @@ export default function Main() {
         <IntroSection />
         <GameJamsSection />
         <GamesSection />
-        <EventsSectiion />
+        <EventsSection />
         <ResourcesSectiion />
         <SponsorsSectiion />
       </div>

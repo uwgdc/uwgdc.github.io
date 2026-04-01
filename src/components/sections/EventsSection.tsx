@@ -2,7 +2,7 @@ import { Button } from "../Button";
 import Tickets from "../../assets/Tickets.png";
 import { CalendarWeeks } from "pixelarticons/react";
 
-export default function EventsSectiion() {
+export default function EventsSection() {
   return (
     <div className="py-20 flex flex-col bg-white">
       <div className="flex flex-row flex-wrap gap-x-12 xl:gap-x-28 gap-y-16 justify-center items-center">
