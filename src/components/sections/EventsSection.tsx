@@ -16,7 +16,7 @@ export default function EventsSection() {
                 className="inline align-top mx-2"
               />
             </h1>
-            <p className="text-neutral-500 font-medium mt-0 w-full">
+            <p className="text-neutral-600 mt-0 w-full">
               We host casual get-togethers each week on Thursdays and Saturdays.
               Come say hi!
             </p>

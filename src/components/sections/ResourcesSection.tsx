@@ -16,7 +16,7 @@ export default function ResourcesSectiion() {
                 className="inline align-top mx-2"
               />
             </h1>
-            <p className="text-neutral-500 font-medium mt-0 w-full">
+            <p className="text-neutral-600 mt-0 w-full">
               We regularly publish game development resources, including guides,
               articles, presentations, and more.
             </p>

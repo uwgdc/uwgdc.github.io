@@ -16,7 +16,7 @@ export default function GameJamsSection() {
                 className="inline align-top mx-2"
               />
             </h1>
-            <p className="text-neutral-500 font-medium mt-0 w-full">
+            <p className="text-neutral-600 mt-0 w-full">
               Our once-a-term game jams are one of the best ways to grow
               alongside others. <u>No experience required!</u>
             </p>

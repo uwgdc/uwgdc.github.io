@@ -57,7 +57,7 @@ function Heading({ children, ...props }: { children?: React.ReactNode }) {
 
 function Body({ children, ...props }: { children?: React.ReactNode }) {
   return (
-    <p className="text-neutral-500 font-medium mt-0 w-full" {...props}>
+    <p className="text-neutral-600 font-medium mt-0 w-full" {...props}>
       {children}
     </p>
   );

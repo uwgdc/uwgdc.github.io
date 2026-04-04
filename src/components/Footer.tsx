@@ -15,7 +15,12 @@ export default function Footer() {
             <br />
             <p className="text-neutral-400">
               Website by{" "}
-              <a href="https://avafe.me" target="_blank" rel="noreferrer">
+              <a
+                className="underline decoration-2"
+                href="https://avafe.me"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Ava Lynch
               </a>
             </p>

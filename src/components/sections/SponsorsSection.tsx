@@ -12,7 +12,7 @@ export default function SponsorsSectiion() {
               Made possible with support
               <Heart width="32" height="32" className="inline align-top mx-2" />
             </h1>
-            <p className="text-neutral-500 font-medium mt-0 w-full">
+            <p className="text-neutral-600 mt-0 w-full">
               We're grateful to our supporters and volunteers for allowing us to
               continue running. If you're a represenative, reach out!
             </p>
@@ -26,7 +26,9 @@ export default function SponsorsSectiion() {
             </a>
           </span>
         </div>
-        <img src={Sponsors} className="h-70"></img>
+        <div className="w-96 flex justify-center">
+          <img src={Sponsors} className="h-70"></img>
+        </div>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export default function IntroSection() {
             Waterloo&apos;s Home
             <br /> for Game Development
           </h1>
-          <p className="text-neutral-500 font-semibold text-center mt-0">
+          <p className="text-neutral-600 text-lg text-center mt-0">
             Open to <u className="decoration-2">everyone</u>.
           </p>
         </article>
