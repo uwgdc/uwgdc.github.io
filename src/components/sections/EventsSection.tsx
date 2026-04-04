@@ -22,8 +22,12 @@ export default function EventsSection() {
             </p>
           </div>
           <span className="flex gap-3 bg-white w-fit">
-            <Button variant="primary">Details</Button>
-            <Button variant="outlined">Notify me</Button>
+            <a href="/wiki/intro">
+              <Button variant="primary">Details</Button>
+            </a>
+            <a href="https://discord.gg/tHEXh9d">
+              <Button variant="outlined">Notify me</Button>
+            </a>
           </span>
         </div>
         <img src={Tickets} className="h-70"></img>

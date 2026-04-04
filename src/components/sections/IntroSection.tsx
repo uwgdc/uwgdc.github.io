@@ -18,8 +18,12 @@ export default function IntroSection() {
           </p>
         </article>
         <span className="flex gap-3">
-          <Button variant="primary">Join us</Button>
-          <Button variant="outlined">Learn more</Button>
+          <a href="https://discord.gg/tHEXh9d">
+            <Button variant="primary">Join us</Button>
+          </a>
+          <a href="/wiki/intro">
+            <Button variant="outlined">Learn more</Button>
+          </a>
         </span>
       </div>
     </div>

@@ -22,8 +22,12 @@ export default function ResourcesSectiion() {
             </p>
           </div>
           <span className="flex gap-3 bg-white w-fit">
-            <Button variant="primary">Wiki</Button>
-            <Button variant="outlined">Blog</Button>
+            <a href="/wiki/intro">
+              <Button variant="primary">Wiki</Button>
+            </a>
+            <a href="/wiki/blog">
+              <Button variant="outlined">Blog</Button>
+            </a>
           </span>
         </div>
         <img src={Resources} className="h-70"></img>

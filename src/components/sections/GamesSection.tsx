@@ -16,9 +16,9 @@ export default function GamesSection() {
             />
           </h1>
           <Carousel />
-          <span className="flex-inline gap-3 bg-white w-fit">
+          {/*<span className="flex-inline gap-3 bg-white w-fit">
             <Button variant="secondary">See more</Button>
-          </span>
+          </span>*/}
         </div>
       </div>
     </div>

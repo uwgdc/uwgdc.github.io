@@ -22,8 +22,12 @@ export default function GameJamsSection() {
             </p>
           </div>
           <span className="flex gap-3 bg-white w-fit">
-            <Button variant="primary">Explore</Button>
-            <Button variant="outlined">Notify me</Button>
+            <a href="https://uwgamedevclub.itch.io/">
+              <Button variant="primary">Explore</Button>
+            </a>
+            <a href="https://discord.gg/tHEXh9d">
+              <Button variant="outlined">Notify me</Button>
+            </a>
           </span>
         </div>
         <img src={Photos} className="h-70"></img>
