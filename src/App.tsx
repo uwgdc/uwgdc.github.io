@@ -7,6 +7,7 @@ import GamesSection from "./components/sections/GamesSection";
 import EventsSection from "./components/sections/EventsSection";
 import ResourcesSectiion from "./components/sections/ResourcesSection";
 import SponsorsSectiion from "./components/sections/SponsorsSection";
+import Footer from "./components/Footer";
 
 export default function Main() {
   return (
@@ -25,6 +26,7 @@ export default function Main() {
         <EventsSection />
         <ResourcesSectiion />
         <SponsorsSectiion />
+        <Footer />
       </div>
     </div>
   );
