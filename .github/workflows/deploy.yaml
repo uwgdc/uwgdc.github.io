@@ -1,15 +1,19 @@
 name: Deploy to GitHub Pages
+
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
 jobs:
   deploy:
     environment:
@@ -26,14 +30,22 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
-      - name: Build
+      - name: Build site
         run: npm run build
+      - name: Build wiki
+        run: npm run docs:build
+      - name: Bundle site for GitHub Pages
+        run: |
+          rm -rf build
+          mkdir -p build/wiki
+          cp -r dist/* build/
+          cp -r docs/dist/* build/wiki/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "./dist"
+          path: build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
