@@ -33,7 +33,7 @@ function Section({
             <Button variant="outlined">Notify me</Button>
           </Buttons>
         </Content>
-        <img src={Tickets} className="h-70"></img>
+        <img src={Tickets} className="max-h-70"></img>
       </div>
     </section>
   );

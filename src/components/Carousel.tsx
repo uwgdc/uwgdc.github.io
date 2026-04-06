@@ -26,7 +26,12 @@ export default function Carousel() {
         className="relative z-10 w-full md:w-4/5 aspect-video bg-black bg-cover outline-4 -outline-offset-4 outline-neutral-100 shadow-xl transition-all"
         style={{ backgroundImage: `url(${game.banner})` }}
       >
-        <a href={game.link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={game.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sm:block hidden"
+        >
           <div className="absolute bottom-4 left-4 pl-4 pr-8 py-2 bg-neutral-100 shadow-md flex flex-col">
             <span className="text-neutral-900 text-lg font-semibold">
               {game.name}

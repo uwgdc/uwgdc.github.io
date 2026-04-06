@@ -4,7 +4,7 @@ import Logo from "./Logo";
 export default function Topbar({ ...props }) {
   return (
     <div
-      className="flex items-center px-4 py-3 justify-between bg-white border-b-2 border-zinc-200 overflow-hidden"
+      className="flex items-center px-2 py-2 justify-between bg-white border-b-2 border-zinc-200 overflow-hidden"
       {...props}
     >
       <a href="/">
