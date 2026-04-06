@@ -11,7 +11,7 @@ export default function Topbar({ ...props }) {
         <Logo />
       </a>
       <div className="inline-flex justify-center items-center gap-3">
-        <Link href="/wiki/intro">Wiki</Link>
+        <Link href="/wiki/">Wiki</Link>
         <Link href="https://discord.gg/tHEXh9d">Discord</Link>
       </div>
     </div>

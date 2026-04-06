@@ -22,7 +22,7 @@ export default function ResourcesSectiion() {
             </p>
           </div>
           <span className="flex gap-3 bg-white w-fit">
-            <a href="/wiki/intro">
+            <a href="/wiki/">
               <Button variant="primary">Wiki</Button>
             </a>
             <a href="/wiki/blog">

@@ -22,7 +22,7 @@ export default function EventsSection() {
             </p>
           </div>
           <span className="flex gap-3 bg-white w-fit">
-            <a href="/wiki/intro">
+            <a href="/wiki/#events">
               <Button variant="primary">Details</Button>
             </a>
             <a href="https://discord.gg/tHEXh9d">

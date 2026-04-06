@@ -21,7 +21,7 @@ export default function IntroSection() {
           <a href="https://discord.gg/tHEXh9d">
             <Button variant="primary">Join us</Button>
           </a>
-          <a href="/wiki/intro">
+          <a href="/wiki/">
             <Button variant="outlined">Learn more</Button>
           </a>
         </span>

@@ -1,15 +1,16 @@
 import { defineConfig } from "vocs";
 
 export default defineConfig({
-  title: "UW Gamedev",
+  title: "UW Gamedev Wiki",
   description: "Game development resources from the University of Waterloo.",
   baseUrl: "https://uwgdc.github.io",
   basePath: "/wiki",
   aiCta: false,
   topNav: [
-    { text: "Wiki", link: "/intro" },
+    { text: "Wiki", link: "/" },
     { text: "Talks", link: "/blog" },
     { text: "Discord", link: "https://discord.gg/tHEXh9d" },
+    { text: "Home", link: "https://uwgdc.github.io" },
   ],
   sidebar: [
     {
@@ -17,15 +18,11 @@ export default defineConfig({
       items: [
         {
           text: "Welcome!",
-          link: "/intro",
+          link: "/",
         },
         {
           text: "Teams",
           link: "/teams",
-        },
-        {
-          text: "Choosing an Engine",
-          link: "/engines",
         },
       ],
     },
