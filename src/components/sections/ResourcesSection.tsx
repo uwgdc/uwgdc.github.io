@@ -5,9 +5,9 @@ import { BookOpen } from "pixelarticons/react";
 export default function ResourcesSectiion() {
   return (
     <div className="py-20 flex flex-col">
-      <div className="flex flex-row flex-wrap gap-x-12 xl:gap-x-28 gap-y-16 justify-center items-center">
+      <div className="flex flex-row flex-wrap gap-x-12 xl:gap-x-28 gap-y-16 px-4 justify-center items-center">
         <div className="flex flex-col gap-8 w-fit">
-          <div className="flex flex-col gap-4 w-96">
+          <div className="flex flex-col gap-4 max-w-96">
             <h1 className="mb-0 text-2xl [&]:font-medium gap-2.5">
               Resources at every step
               <BookOpen

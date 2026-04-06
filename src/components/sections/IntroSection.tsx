@@ -7,7 +7,7 @@ export default function IntroSection() {
     <div className="py-28 flex flex-col">
       <Gizmo className="-translate-y-10 absolute opacity-0 right-0 md:opacity-100 md:right-8 lg:right-32 xl:right-64 transition-all duration-300" />
       <Controller className="translate-y-24 absolute opacity-0 left-0 md:opacity-100 md:left-8 lg:left-32 xl:left-64 transition-all duration-300" />
-      <div className="flex flex-col gap-8 items-center justify-center">
+      <div className="flex flex-col gap-8 px-2 items-center justify-center">
         <article className="flex flex-col gap-4">
           <h1 className="text-center mb-0 text-3xl md:text-4xl [&]:font-medium">
             Waterloo&apos;s Home
